@@ -1,0 +1,497 @@
+
+/* ---------- GENERAL FORMATTING ---------- */
+
+@font-face {
+    font-family: bruno;
+    src: url("font-style/bruno_ace/BrunoAce-Regular.ttf");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2d7b6;
+    font-size: 14px; 
+    background-image: url("../images/astro-stars-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#261a2d;
+    margin: 0% 0% 0% 0%;
+}
+/* ----- HEADER ----- */
+
+header {
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    position: static;
+    margin: 2% 0%;
+    background-image: url("../images/stars-2.png");
+    background-color: #261a2d;
+    background-size: cover;
+    border-top: 2px solid #f2d7b6;
+    border-bottom: 2px solid #f2d7b6;
+}
+
+div.head-logo {
+    position: relative;
+    left: 10px;
+}
+
+/* NAV */
+
+nav {
+    position: relative;
+    left: 20%;
+    display: inline;
+    font-family: bruno;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav ul li a:link {
+    text-decoration:none;
+    color: #D98236;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+}
+
+
+nav ul li a:hover {
+    color:#f2d7b6;
+}
+
+ul.spacing li {
+    align-content: center;
+    margin-right: 5%;
+}
+
+li.icon {
+    position: relative;
+    bottom: 8px;
+}
+
+li.social {
+    position: relative;
+    bottom: 10px;
+}
+
+li.icon a svg:hover path {
+    fill: #f2d7b6;
+}
+
+li.social a svg:hover path {
+    fill: #f2d7b6;
+}
+
+.search-bar {
+    background-color:#261a2d;
+    border: #D98236 solid 0.5px;
+    border-radius: 25px;
+    position: relative;
+    bottom: 10px;
+
+}
+
+/* ---------- HOMEPAGE ---------- */
+
+section.home {
+    display:flex;
+    position: static;
+    margin: 10% 2% 35% 50%;
+}
+
+div.tomorrow {
+    position: relative;
+    top: 40px;
+    left:  70px;
+}
+
+
+div.shop {
+    position: relative;
+    top: 180px;
+    right: 300px
+
+}
+
+div.shop a:hover {
+    position: relative;
+}
+
+div.shop a:hover:after {
+    content: url("../images/shop-red-3.svg");
+    display:flex;
+    position:absolute;
+    right: 120px;
+    bottom: 15px;
+}
+/* ANIMATION */
+#lift-can {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+} 
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 12px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+footer    {
+    position: relative;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    text-align: center;
+    background-image: url("../images/stars-2.png");
+    background-color: #261a2d;
+    border: #732222 solid 8px;
+}
+
+div.contact-button {
+    position: relative;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #f2d7b6;
+}
+
+div.contact-button a svg:hover  path {
+    fill: #D98236;
+} 
+
+/* ---------- SECONDARY PAGES ---------- */
+
+.secondary-pages {
+    background-image: url("../images/stars-3.png");
+
+}
+
+div.secondary-header h1 {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10%;
+    background-color:#261a2d;
+    border:#f2d7b6 solid 1px;
+    position: relative;
+    top: 40px;
+    font-family: bruno;
+    color:#D98236;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* ---------- CONTACT ---------- */
+
+section.contact {
+    position: static;
+    width: 100%;
+}
+
+div.form-background {
+    background-color: #732222;
+    padding: 2%;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 224px;
+    border-radius: 25px;
+}
+
+form.f-grid {
+    position: relative;
+    top: 20px;
+    display: grid;
+    justify-content:center;
+    align-items: stretch;
+    grid-template-columns: 600px 200px ;
+    grid-template-rows: 30px 30px 30px 300px 30px ;
+    gap: 40px;
+}
+
+form.f-grid div input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+form.f-grid div textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+form.f-grid div label {
+    font-family: inherit;
+    font-size: 26px;
+    color: #D98236;
+    text-transform: uppercase;
+    position: relative;
+    right: 20px;
+    
+}
+div.name {
+    display: flex;
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+div.mail {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+div.sub {
+    display: flex;
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+div.mess {
+    display: flex;
+    grid-column: span 2;
+    grid-row: 4;
+}
+
+div.e-check {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+div.sub-res {
+    display: flex;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+div.sub-res button {
+    text-transform: uppercase;
+}
+
+/*----------CHECK OUT-----------*/
+
+span.svg-cart-count {
+    position: relative;
+    right: 12px;
+    bottom: 6px;
+    font-size: 22px;
+    color:#f2d7b6;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px 20px; 
+    margin: 60px 20px 120px 20px; 
+    justify-content: space-evenly;
+    align-content: center;
+}
+.list .item{
+    width: 250px; 
+    text-align: center;
+    background-color:#261a2d;
+    padding: 12px;
+    border: #D98236 solid 3px;
+    border-radius: 25px;
+    box-shadow: 0 50px 50px #732222;
+    letter-spacing: 1px;
+}
+.list .item img{
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.list .item .title{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color:#D98236;
+    font-weight: 600;
+}
+.list .item .price{
+    color:#D98236;
+    margin: 10px;
+}
+.list .item button{
+    background-color:#261a2d;
+    border: #D98236 solid 2px;
+    border-radius: 25px;
+    color:#D98236;
+    text-transform: uppercase;
+    width: 250px;
+    padding: 10px;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #261a2d;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color:#f2d7b6;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color:#732222;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #732222;
+    color: #f2d7b6;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    grid-template-rows: 140px;
+    color: #f2d7b6;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    border-radius: 5px;
+    width: 90%;
+}
+.listCard li button{
+    background-color: #f2d7b6;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+/*---------- recipes ----------*/
+
+div.recipe-container {
+   display:grid;
+   margin: 60px 5px;
+   grid-template-columns: 650px 650px;
+   grid-template-rows: 900px;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #261a2d;
+   border: #732222 solid;
+   width: fit-content;
+   height: fit-content;
+   border-radius: 25px;
+}
+
+div.recipe-panel {
+    display: block;
+    margin: 10px 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+img.mojito {
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    border: #f2d7b6 solid 2px;
+
+}
+
+img.sangria {
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+    border: #f2d7b6 solid 2px;
+}
+
+div.recipe-panel h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #D98236;
+
+}
+
+ul.recipe-list {
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+ul.recipe-list li {
+    position: relative;
+    left: 22%; 
+    list-style-type:circle;
+    letter-spacing: 1.5px;
+    width: 90%; 
+    font-size: 20px; 
+    padding: 6px;
+    color: #D98236;
+}
+
+
+
+
+
+
+/*----------Footer----------*/
+div.social-icons {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    justify-content: space-evenly;
+}
+
+div.social-icons svg path {  
+    fill: #f2d7b6;
+    
+}
+
+div.social-icons svg:hover path {
+    fill: #D98236;    
+}
+
+footer h1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
