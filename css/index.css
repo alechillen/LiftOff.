@@ -3,8 +3,7 @@
 
 @font-face {
     font-family: "bruno";
-    src: url("https://alechillen.github.io/lift-off/css/font-style/bruno_ace/bruno-ace-regular.ttf");
-    src: url("https://alechillen.github.io/lift-off/css/font-style/bruno_ace/ofl.txt");
+    src: url("font-style/bruno_ace/bruno-ace-regular.ttf");
 }
 
 body {
