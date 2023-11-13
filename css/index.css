@@ -43,6 +43,7 @@ nav {
     left: 20%;
     display: inline;
     font-family: bruno;
+    color: #D98236;
     width: 80%;
     text-transform: uppercase;
     font-size: 24px;
@@ -50,7 +51,6 @@ nav {
 
 nav ul li a:link {
     text-decoration:none;
-    color: #D98236;
 }
 
 nav ul li {
