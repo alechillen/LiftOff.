@@ -29,49 +29,49 @@ let products = [
     {
         id: 3,
         name: 'kiwi',
-        image: 'kiwi-mockup.PNG',
+        image: 'kiwi-mockup.png',
         price:17.99 
     },
     {
         id: 4,
         name: 'grapefruit',
-        image: 'grapefruit-mockup.PNG',
+        image: 'grapefruit-mockup.png',
         price: 17.99 
     },
     {
         id: 5,
         name: 'lemon',
-        image: 'lemon-mockup.PNG',
+        image: 'lemon-mockup.png',
         price: 16.99 
     },
     {
         id: 6,
         name: 'mango',
-        image: 'mango-mockup.PNG',
+        image: 'mango-mockup.png',
         price: 17.99 
     },
     {
         id: 7,
         name: 'orange',
-        image: 'orange-mockup.PNG',
+        image: 'orange-mockup.png',
         price: 16.99 
     },
     {
         id: 8,
         name: 'rasberry-lime',
-        image: 'ras-mockup.PNG',
+        image: 'ras-mockup.png',
         price: 17.99 
     },
     {
         id: 9,
         name: 'liftoff. t-shirt',
-        image: 'purple-shirt.PNG',
+        image: 'purple-shirt.png',
         price: 29.99 
     },
     {
         id: 10,
         name: 'baseball hat',
-        image: 'baseball-hat.PNG',
+        image: 'baseball-hat.png',
         price:  22.99 
     },
 
